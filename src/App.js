@@ -4,6 +4,7 @@ import Form from './components/Form';
 
 import {CategoriesProvider} from './context/CategoriesContext';
 import {EventProvider} from './context/EventContext';
+import EventList from './components/EventList';
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <CategoriesProvider>
                     <EventProvider>
                             <Form />
+                            <EventList/>
                     </EventProvider>
                 </CategoriesProvider>
         </div>
